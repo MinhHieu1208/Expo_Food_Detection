@@ -2,7 +2,7 @@
   "expo": {
     "name": "Expo_Food_Detection",
     "env": {
-      "API_URL": "http://10.0.2.2:5000/"
+      "API_URL": "http://192.168.1.2:5000/"
     },
     "slug": "Expo_Food_Detection",
     "version": "1.0.0",
@@ -14,13 +14,12 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "permissions": ["CAMERA", "CAMERA_ROLL"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"

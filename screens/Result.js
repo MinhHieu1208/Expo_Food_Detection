@@ -49,15 +49,15 @@ function Result({ route }) {
         second: (props) => <SecondRoute {...props} layout={layout.width} cook={cook} />,
     });
 
-    React.useEffect(() => {
-        const unsubscribe = navigation.addListener('beforeRemove', (e) => {
-            // Ngăn người dùng quay lại màn hình PickScreen
-            e.preventDefault();
-        });
+    // React.useEffect(() => {
+    //     const unsubscribe = navigation.addListener('beforeRemove', (e) => {
+    //         // Ngăn người dùng quay lại màn hình PickScreen
+    //         e.preventDefault();
+    //     });
 
-        return unsubscribe;
+    //     return unsubscribe;
 
-    }, [navigation]);
+    // }, [navigation]);
 
     const pickImage = async () => {
         // No permissions request is necessary for launching the image library
